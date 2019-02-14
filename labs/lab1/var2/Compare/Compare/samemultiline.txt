@@ -1,0 +1,1 @@
+same1multiline.txt same2multiline.txt

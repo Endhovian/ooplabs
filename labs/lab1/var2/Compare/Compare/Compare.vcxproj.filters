@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="tests">
+      <UniqueIdentifier>{325ca138-7328-4f93-8ec6-ec2615384b54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests_out">
+      <UniqueIdentifier>{efac96d2-0455-4123-833f-00f6728aa7b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test_data">
+      <UniqueIdentifier>{eda9cb97-1cb4-4b38-9afe-568656484904}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Compare.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="same2multiline.txt">
+      <Filter>test_data</Filter>
+    </Text>
+    <Text Include="same1multiline.txt">
+      <Filter>test_data</Filter>
+    </Text>
+    <Text Include="notsame1multiline.txt">
+      <Filter>test_data</Filter>
+    </Text>
+    <Text Include="same1oneline.txt">
+      <Filter>test_data</Filter>
+    </Text>
+    <Text Include="same2oneline.txt">
+      <Filter>test_data</Filter>
+    </Text>
+    <Text Include="notsame1oneline.txt">
+      <Filter>test_data</Filter>
+    </Text>
+    <Text Include="empty1.txt">
+      <Filter>test_data</Filter>
+    </Text>
+    <Text Include="empty2.txt">
+      <Filter>test_data</Filter>
+    </Text>
+    <Text Include="testempty1.txt">
+      <Filter>tests</Filter>
+    </Text>
+    <Text Include="testempty2.txt">
+      <Filter>tests</Filter>
+    </Text>
+    <Text Include="testempty1_out.txt">
+      <Filter>tests_out</Filter>
+    </Text>
+    <Text Include="testempty2_out.txt">
+      <Filter>tests_out</Filter>
+    </Text>
+    <Text Include="testnothing1.txt">
+      <Filter>tests</Filter>
+    </Text>
+    <Text Include="testnothing2.txt">
+      <Filter>tests</Filter>
+    </Text>
+    <Text Include="testnothing2_out.txt">
+      <Filter>tests_out</Filter>
+    </Text>
+    <Text Include="testnothing1_out.txt">
+      <Filter>tests_out</Filter>
+    </Text>
+    <Text Include="sameoneline.txt">
+      <Filter>tests</Filter>
+    </Text>
+    <Text Include="samemultiline.txt">
+      <Filter>tests</Filter>
+    </Text>
+    <Text Include="samemultiline_out.txt">
+      <Filter>tests_out</Filter>
+    </Text>
+    <Text Include="sameoneline_out.txt">
+      <Filter>tests_out</Filter>
+    </Text>
+    <Text Include="testnotsame1.txt">
+      <Filter>tests</Filter>
+    </Text>
+    <Text Include="testnotsame2.txt">
+      <Filter>tests</Filter>
+    </Text>
+    <Text Include="testnotsame3.txt">
+      <Filter>tests</Filter>
+    </Text>
+    <Text Include="testnotsame1_out.txt">
+      <Filter>tests_out</Filter>
+    </Text>
+    <Text Include="testnotsame2_out.txt">
+      <Filter>tests_out</Filter>
+    </Text>
+    <Text Include="testnotsame3_out.txt">
+      <Filter>tests_out</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="test.bat">
+      <Filter>Исходные файлы</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -7,10 +7,6 @@ set PROGRAM="%~1"
 
 set OUT="%TEMP%\out.txt"
 
-rem ѕри запуске без параметров ожидаетс€ ненулевой код возврата
-%PROGRAM% > nul
-if NOT ERRORLEVEL 1 goto err
-
 rem провер€ем сравнение с пустым файлом
 %PROGRAM% < testempty1.txt > %OUT%
 if NOT ERRORLEVEL 1 goto err

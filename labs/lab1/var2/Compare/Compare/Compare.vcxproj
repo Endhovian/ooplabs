@@ -234,6 +234,8 @@
     <Text Include="samemultiline_out.txt" />
     <Text Include="sameoneline.txt" />
     <Text Include="sameoneline_out.txt" />
+    <Text Include="testcompare_out.txt" />
+    <Text Include="testcompare.txt" />
     <Text Include="testempty1.txt" />
     <Text Include="testempty1_out.txt" />
     <Text Include="testempty2.txt" />

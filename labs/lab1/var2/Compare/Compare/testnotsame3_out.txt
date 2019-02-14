@@ -1,1 +1,1 @@
-"Files are different. Line number is 2"
+Files are different. Line number is 2

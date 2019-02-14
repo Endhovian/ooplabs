@@ -115,6 +115,12 @@
     <Text Include="testnotsame3_out.txt">
       <Filter>tests_out</Filter>
     </Text>
+    <Text Include="testcompare.txt">
+      <Filter>tests</Filter>
+    </Text>
+    <Text Include="testcompare_out.txt">
+      <Filter>tests_out</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <None Include="test.bat">

@@ -8,59 +8,65 @@ set PROGRAM="%~1"
 set OUT="%TEMP%\out.txt"
 
 rem проверяем сравнение с пустым файлом
-%PROGRAM% < testempty1.txt > %OUT%
-if NOT ERRORLEVEL 1 goto err
+%PROGRAM% empty1.txt notsame1multiline.txt > %OUT%
+if ERRORLEVEL 1 goto err
 fc %OUT% testempty1_out.txt
 if ERRORLEVEL 1 goto err
 
 rem проверяем сравнение 2 пустых файлов
-%PROGRAM% < testempty2.txt > %OUT%
+%PROGRAM% empty1.txt empty2.txt > %OUT%
 if ERRORLEVEL 1 goto err
 fc.exe %OUT% testempty2_out.txt
 if ERRORLEVEL 1 goto err
 
 rem проверяем сравнение если одного из файлов нет
-%PROGRAM% < testnothing1.txt > %OUT% 
+%PROGRAM% simpletxt1.txt empty.txt > %OUT% 
 if NOT ERRORLEVEL 1 goto err
-fc.exe %OUT% testnothing1_out.txt
-if ERRORLEVEL 1 goto err
+rem fc.exe %OUT% testnothing1_out.txt
+rem if ERRORLEVEL 1 goto err
 
 rem проверяем сравнение если обоих файлов нет
-%PROGRAM% < testnothing2.txt > %OUT%
+%PROGRAM% simpletxt1.txt simpletxt2.txt > %OUT%
 if NOT ERRORLEVEL 1 goto err
-fc.exe %OUT% testnothing2_out.txt
-if ERRORLEVEL 1 goto err
+rem fc.exe %OUT% testnothing2_out.txt
+rem if ERRORLEVEL 1 goto err
 
 rem проверяем сравнение идентичных файлов в одну строку 
-%PROGRAM% < sameoneline.txt > %OUT%
+%PROGRAM% same1oneline.txt same2oneline.txt > %OUT%
 if ERRORLEVEL 1 goto err
 fc.exe %OUT% sameoneline_out.txt
 if ERRORLEVEL 1 goto err
 
 rem проверяем сравнеение идентичных файлов в несколько строки
-%PROGRAM% < samemultiline.txt > %OUT%
+%PROGRAM% same1multiline.txt same2multiline.txt > %OUT%
 if ERRORLEVEL 1 goto err
 fc.exe %OUT% samemultiline_out.txt
 if ERRORLEVEL 1 goto err
 
 rem проверяем сравнение не идентичных файлов в одну строку
-%PROGRAM% < testnotsame1.txt > %OUT%
-if NOT ERRORLEVEL 1 goto err
+%PROGRAM% notsame1oneline.txt same1oneline.txt > %OUT%
+if ERRORLEVEL 1 goto err
 fc.exe %OUT% testnotsame1_out.txt
 if ERRORLEVEL 1 goto err
 
 rem проверяем сравнение не идентичных файлов в несколько строк
-%PROGRAM% < testnotsame2.txt > %OUT%
-if NOT ERRORLEVEL 1 goto err
+%PROGRAM% notsame1multiline.txt same1multiline.txt > %OUT%
+if ERRORLEVEL 1 goto err
 fc.exe %OUT% testnotsame2_out.txt
 if ERRORLEVEL 1 goto err
 
 rem проверяем сравнение не идентичных файлов одного в несколько строк и второго в одну строку
-%PROGRAM% < testnotsame3.txt > %OUT%
-if NOT ERRORLEVEL 1 goto err
+%PROGRAM% notsame1multiline.txt notsame1oneline.txt > %OUT%
+if ERRORLEVEL 1 goto err
 fc.exe %OUT% testnotsame3_out.txt
 if ERRORLEVEL 1 goto err
 
+
+rem проверка файлов из замечания
+%PROGRAM% Compare1.cpp Compare2.cpp > %OUT%
+if ERRORLEVEL 1 goto err
+fc.exe %OUT% testcompare_out.txt
+if ERRORLEVEL 1 goto err
 
 echo Program testing succeeded
 exit 0

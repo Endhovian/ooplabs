@@ -25,8 +25,6 @@ int main()
 		if (s1 != s2)
 		{
 			cout << "\"Files are different. Line number is " << n << "\"";
-			i1.close();
-			i2.close();
 			return 1;
 		}
 		//проверка на то что один из файлов закончился
@@ -34,8 +32,6 @@ int main()
 		{
 			n++;
 			cout << "\"Files are different. Line number is " << n << "\"";
-			i1.close();
-			i2.close();
 			return 1;
 			}
 	}

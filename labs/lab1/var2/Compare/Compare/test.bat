@@ -35,7 +35,7 @@ if NOT ERRORLEVEL 1 goto err
 fc.exe %OUT% testnothing2_out.txt
 if ERRORLEVEL 1 goto err
 
-rem проверяем сравнение идентичных файлов в одну строку
+rem проверяем сравнение идентичных файлов в одну строку 
 %PROGRAM% < sameoneline.txt > %OUT%
 if ERRORLEVEL 1 goto err
 fc.exe %OUT% sameoneline_out.txt

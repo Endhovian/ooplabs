@@ -13,46 +13,15 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="test_data">
-      <UniqueIdentifier>{cd10fd25-06cc-4a8c-8901-350f437ba12f}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="pch.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
+    <Text Include="test.bat">
+      <Filter>Исходные файлы</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="pch.cpp">
+    <ClCompile Include="dec2bin.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="SayHallo.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="test.bat">
-      <Filter>Исходные файлы</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="Boris.txt">
-      <Filter>test_data</Filter>
-    </Text>
-    <Text Include="Boris-out.txt">
-      <Filter>test_data</Filter>
-    </Text>
-    <Text Include="HarryPotter.txt">
-      <Filter>test_data</Filter>
-    </Text>
-    <Text Include="HarryPotter-out.txt">
-      <Filter>test_data</Filter>
-    </Text>
-    <Text Include="Empty.txt">
-      <Filter>test_data</Filter>
-    </Text>
-    <Text Include="Empty-out.txt">
-      <Filter>test_data</Filter>
-    </Text>
   </ItemGroup>
 </Project>

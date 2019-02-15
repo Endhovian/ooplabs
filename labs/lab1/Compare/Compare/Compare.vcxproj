@@ -224,7 +224,7 @@
   <ItemGroup>
     <Text Include="empty1.txt" />
     <Text Include="empty2.txt" />
-    <Text Include="samemultiline.txt" />
+    <Text Include="invalidareguments_out.txt" />
     <Text Include="notsame1oneline.txt" />
     <Text Include="same1multiline.txt" />
     <Text Include="notsame1multiline.txt" />
@@ -232,23 +232,14 @@
     <Text Include="same2multiline.txt" />
     <Text Include="same2oneline.txt" />
     <Text Include="samemultiline_out.txt" />
-    <Text Include="sameoneline.txt" />
     <Text Include="sameoneline_out.txt" />
     <Text Include="testcompare_out.txt" />
-    <Text Include="testcompare.txt" />
-    <Text Include="testempty1.txt" />
     <Text Include="testempty1_out.txt" />
-    <Text Include="testempty2.txt" />
     <Text Include="testempty2_out.txt" />
-    <Text Include="testnothing1.txt" />
     <Text Include="testnothing1_out.txt" />
-    <Text Include="testnothing2.txt" />
     <Text Include="testnothing2_out.txt" />
-    <Text Include="testnotsame1.txt" />
     <Text Include="testnotsame1_out.txt" />
-    <Text Include="testnotsame2.txt" />
     <Text Include="testnotsame2_out.txt" />
-    <Text Include="testnotsame3.txt" />
     <Text Include="testnotsame3_out.txt" />
   </ItemGroup>
   <ItemGroup>

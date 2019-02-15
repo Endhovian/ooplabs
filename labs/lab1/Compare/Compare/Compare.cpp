@@ -18,13 +18,6 @@ int CompareFiles(const string& fileName1, const string& fileName2)
 		cout << "Failed to open " << fileName2 << " for writing\n";
 		return 1;
 	}
-	// Обработка и вывод результата сравнения
-	if (!file1 || !file2)
-	{
-		cout << "File not found";
-		return 1;
-	}
-
 	int n = 0;
 	while (!file1.eof() && !file2.eof())
 	{
@@ -57,8 +50,6 @@ int main(int argc, char* argv[])
 			 << "Usage: compare.exe <input file1> <input file2>\n";
 		return 1;
 	}
-	string fileName1 = argv[1], fileName2 = argv[2];	
-	CompareFiles(fileName1, fileName2);
-	return 0;
+	int errorLevel = CompareFiles(argv[1], argv[2]);
+	return errorLevel;
 }
-

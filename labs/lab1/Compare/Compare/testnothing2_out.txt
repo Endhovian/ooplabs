@@ -1,0 +1,1 @@
+Failed to open simpletxt2.txt for reading

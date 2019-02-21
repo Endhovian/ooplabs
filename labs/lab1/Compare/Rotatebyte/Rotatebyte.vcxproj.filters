@@ -13,15 +13,29 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="tests_out">
+      <UniqueIdentifier>{acc9a216-aa6c-4427-adeb-9302c5aca879}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="test.bat">
-      <Filter>Исходные файлы</Filter>
-    </Text>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="dec2bin.cpp">
+    <ClCompile Include="rotatebyte.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="test.bat">
+      <Filter>Исходные файлы</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="basictest.txt">
+      <Filter>tests_out</Filter>
+    </Text>
+    <Text Include="customcase1.txt">
+      <Filter>tests_out</Filter>
+    </Text>
+    <Text Include="customcase2.txt">
+      <Filter>tests_out</Filter>
+    </Text>
   </ItemGroup>
 </Project>

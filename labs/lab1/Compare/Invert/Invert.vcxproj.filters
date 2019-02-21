@@ -15,12 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="..\Bin2dec\test.bat">
-      <Filter>Исходные файлы</Filter>
-    </Text>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\Bin2dec\dec2bin.cpp">
+    <ClCompile Include="invert.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>

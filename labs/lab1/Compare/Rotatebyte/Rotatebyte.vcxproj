@@ -148,6 +148,7 @@
     <Text Include="basictest.txt" />
     <Text Include="customcase1.txt" />
     <Text Include="customcase2.txt" />
+    <Text Include="failcase.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -37,5 +37,8 @@
     <Text Include="customcase2.txt">
       <Filter>tests_out</Filter>
     </Text>
+    <Text Include="failcase.txt">
+      <Filter>tests_out</Filter>
+    </Text>
   </ItemGroup>
 </Project>

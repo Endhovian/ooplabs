@@ -8,12 +8,10 @@ int leftRotate(int n, unsigned int d)
 {
 	return (n << d) | (n >> (INT_BITS - d));
 }
-
 int rightRotate(int n, unsigned int d)
 {
 	return (n >> d) | (n << (INT_BITS - d));
 }
-
 int main(int argc, char* argv[])
 {
 	if (argc != 4)
@@ -22,15 +20,14 @@ int main(int argc, char* argv[])
 			 << "Usage: rotatebyte.exe <byte> <number of bits> <L / R>\n";
 		return 1;
 	}
-	int n = stoi(argv[1]), d = stoi(argv[2]);
 	if (!strcmp(argv[3], "L"))
 	{
-		cout << leftRotate(n, d);
+		cout << leftRotate(stoi(argv[1]), stoi(argv[2]));
 		return 0;
 	}
 	if (!strcmp(argv[3], "R"))
 	{
-		cout << rightRotate(n, d);
+		cout << rightRotate(stoi(argv[1]), stoi(argv[2]));
 		return 0;
 	}
 	cout << "Invalid arguments\n"
